@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Year Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Calculate your dog's age in human years</h1>
+      <div class="size-container">
+        <label for="size-selector">Select size of your dog: </label>
+        <select name="size-selector" id="size-selector">
+          <option id="small-dog" value="smalldog">Small: 0 - 9 kg></option>
+          <option id="medium-dog" value="mediumdog">Medium: 9 - 20 kg</option>
+          <option id="large-dog" value="largedog">Large: 20 kg or above</option>
+        </select>
+      </div>
+
+      <div class="input-age">
+        <label for="year">Enter Your Dog's age:</label>
+        <input type="number" name="year" id="year" min="1" max="16" />
+        <button type="submit">
+          <i class="fa fa-calculator" aria-hidden="true"></i>
+        </button>
+
+        <p id="result"></p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

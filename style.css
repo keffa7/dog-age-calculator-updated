@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #af9f85;
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.4rem;
+  justify-content: center;
+  text-align: center;
+  background-image: url(./img/pexels-chevanon-photography-1108099.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(247, 246, 242);
+}
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  position: absolute;
+  margin: 5rem 0;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.size-container {
+  top: 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  width: 80%;
+  height: 10vh;
+}
+
+.input-age {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-self: center;
+}
+label {
+  color: whitesmoke;
+}
+label,
+input {
+  font-size: large;
+  font-weight: bold;
+}
+#year::before {
+  content: "";
+}
+#year::after {
+  content: "";
+}
+#size-selector,
+#year {
+  width: 5rem;
+  padding: 0 0.4rem;
+  text-align: left;
+  border: #af9f85 2px solid;
+  background-color: whit;
+  border-radius: 5px;
+}
+#result {
+  font-size: 2.2rem;
+  transition: transform 400ms;
+  transform: scale(0);
+  margin-top: 3rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: whitesmoke;
+}
+#result.active {
+  transition: transform 400ms;
+  transform: scale(1);
+}
+#size-selector {
+  width: 8rem;
+}
+button {
+  text-align: center;
+  width: 4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 300ms;
+}
+button i {
+  font-size: large;
+  pointer-events: all;
+  transition: 100ms;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #af9f85;
+  color: whitesmoke;
+  filter: opacity(0.5);
+  transition: 300ms;
+}
