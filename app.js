@@ -86,7 +86,7 @@ function dogYears() {
 
   if (inputYear.value < 0) {
     result.innerText = `You've made a mistake. Try again`;
-  } else if (inputYear.value > 20) {
+  } else if (inputYear.value > 16) {
     result.innerText = `Your dog is already dead.`;
   } else if (inputYear.value === "") {
     result.innerText = `Please enter numerical value.`;
